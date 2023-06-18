@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>JavaScript Calculator</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <div class="display">
+                    <p id="previous-operand"></p>
+                    <p id="current-operand"></p>
+                </div>
+                <div class="keyboard">
+                    <button class="operators" id="clear" onclick="cancel()">C</button>
+                    <button class="operators" id="backspace" onclick="backspace()"><img src="images/backspace.png" alt="image of backspace"></button>
+                    <button class="operators" id="ratio" onclick="choseOperation('%')"><img src="images/ratio.png" alt=""></button>
+                    <button class="operators" id="divide" onclick="choseOperation('/')">
+                        <img src="images/divide.png" alt=""></button>
+                    <button class="numbers" id="number7" onclick="addNumber(7);">7</button>
+                    <button class="numbers" id="number8" onclick="addNumber(8);">8</button>
+                    <button class="numbers" id="number9" onclick="addNumber(9);">9</button>
+                    <button class="operators" id="multiply" onclick="choseOperation('*')"><img src="images/icons8-multiply-30.png" alt=""></button>
+                    <button class="numbers" id="number4" onclick="addNumber(4);">4</button>
+                    <button class="numbers" id="number5" onclick="addNumber(5);">5</button>
+                    <button class="numbers" id="number6" onclick="addNumber(6);">6</button>
+                    <button class="operators" id="subtract" onclick="choseOperation('-')"><img src="images/icons8-subtract-50.png" alt=""></button>
+                    <button class="numbers" id="number1" onclick="addNumber(1);">1</button>
+                    <button class="numbers" id="number2" onclick="addNumber(2);">2</button>
+                    <button class="numbers" id="number3" onclick="addNumber(3);">3</button>
+                    <button class="operators" id="plus" onclick="choseOperation('+')"><img src="images/plus.png" alt=""></button>
+                    <button class="numbers" id="ac" onclick="allClearDisplay()">AC</button>
+                    <button class="numbers" id="number0" onclick="addNumber(0);">0</button>
+                    <button class="numbers" id="point" onclick="addPointer()">.</button>
+                    <button class="operators" id="equal" onclick="equalsResult()"><img src="images/icons8-equal-sign-24.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
